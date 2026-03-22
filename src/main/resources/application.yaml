@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: customer-service
+
+  config:
+    import: "configserver:"
+
+  cloud:
+    config:
+      #      uri: http://config.platform:9000
+      uri: http://localhost:9000
