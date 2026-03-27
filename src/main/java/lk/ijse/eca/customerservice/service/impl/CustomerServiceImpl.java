@@ -107,7 +107,7 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.delete(customer);
         log.debug("Customer marked for deletion in DB: {}", nic);
 
-        deletePicture(pictureId);
+        tryDeletePicture(pictureId);
 
         log.info("Customer deleted successfully: {}", nic);
     }
